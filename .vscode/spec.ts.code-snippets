@@ -1,0 +1,48 @@
+{
+  "test-component": {
+    "prefix": "test-component",
+    "body": [
+      "import { describe, afterEach, it, expect } from 'vitest'",
+      "import { shallowMount } from '@vue/test-utils'",
+      "import type { VueWrapper } from '@vue/test-utils'",
+      "import ${TM_FILENAME/(.*).spec.ts$/$1/} from './${TM_FILENAME/(.*).spec.ts$/$1/}.vue'",
+      "",
+      "describe('${TM_FILENAME/(.*).spec.ts$/$1/}', () => {",
+      "  let wrapper: VueWrapper",
+      "",
+      "  function mountComponent () {",
+      "    wrapper = shallowMount(${TM_FILENAME/(.*).spec.ts$/$1/}, {})",
+      "  }",
+      "",
+      "  afterEach(() => {",
+      "    wrapper.unmount()",
+      "  })",
+      "",
+      "  it('can mount', () => {",
+      "    mountComponent()",
+      "",
+      "    expect(wrapper.exists()).toEqual(true)",
+      "  })",
+      "})",
+      "",
+    ]
+  },
+  "test-store": {
+    "prefix": "test-store",
+    "body": [
+      "import { describe, beforeEach, it, expect } from 'vitest'",
+      "import { setActivePinia, createPinia } from 'pinia'",
+      "import { $1 } from './${TM_FILENAME/(.*).spec.ts$/$1/}'",
+      "",
+      "describe('$2 Store', () => {",
+      "  beforeEach(() => {",
+      "    setActivePinia(createPinia())",
+      "  })",
+      "",
+      "  it('sets the default state', () => {",
+      "    const store = $1()",
+      "  })",
+      "})",
+    ],
+  }
+}
