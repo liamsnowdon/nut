@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/seo',
+    '@nuxt/image',
   ],
   components: {
     dirs: [],

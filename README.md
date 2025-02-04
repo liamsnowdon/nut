@@ -12,10 +12,12 @@ Nuxt. UnoCSS. TypeScript. A template for building Nuxt applications.
 - [Vitest](https://vitest.dev) - The Vite-native testing framework. It's fast!
 - [Vue Test Utils](https://test-utils.vuejs.org) - The official testing suite utils for Vue
 - [Eslint](https://eslint.org) - Linting for JavaScript, TypeScript, Vue and Nuxt
+- Netlify Ready - TOML file for building to Netlify
 
 ## Modules
 - [Nuxt Eslint](https://eslint.nuxt.com) - All-in-one ESLint integration for Nuxt
 - [NuxtSEO](https://nuxtseo.com) - A collection of modules that handle all of the technical aspects in growing your sites organic traffic
+- [Nuxt Image](https://image.nuxt.com) - Plug-and-play image optimization for Nuxt apps.
 - [UnoCSS](https://unocss.dev/integrations/nuxt) - The Nuxt module for UnoCSS
 - [Pinia](https://pinia.vuejs.org/ssr/nuxt.html) - The Nuxt module for Pinia
 
@@ -23,7 +25,7 @@ Nuxt. UnoCSS. TypeScript. A template for building Nuxt applications.
 
 [Create a repo from this template on GitHub](https://github.com/liamsnowdon/nut/generate).
 
-## Local
+## Development
 
 Make sure to install dependencies:
 
